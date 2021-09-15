@@ -17,7 +17,7 @@
                     <img src="/img/rc-car.png" width="70px" alt="">
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="">Home</a></li>
                         <li><a href="">Product</a></li>
                         <li><a href="">About</a></li>
@@ -25,7 +25,11 @@
                         <li><a href="">Account</a></li>
                     </ul>
                 </nav>
-                <img src="/img/shopping-bag.png" width="30px"  alt="">
+                <div class="cart">
+                    <img src="/img/cart.png" width="30px" alt="">
+                    <div class="amount">99+</div>
+                </div>
+                <img src="/img/menu.png" id="menu-icon" class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
                 <div class="col-2">
@@ -242,10 +246,129 @@
                     <source src="/img/luxSA2.mp4" type="video/mp4">
                     Trình duyệt của bạn không hỗ trợ HTML5.
                   </video>   
-            </div>
-        </div>
-                       
+            </div>-
+        </div>                       
     </div>
 </div>
+<!-- ---------------testimonial------------ -->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, aperiam. Asperiores veritatis ad quibusdam atque molestias quas consequatur cum corrupti, accusantium error, architecto pariatur, repudiandae odio aperiam? Velit, provident voluptas!</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <img src="/img/user-1.png">
+                    <h3>Mary</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, aperiam. Asperiores veritatis ad quibusdam atque molestias quas consequatur cum corrupti, accusantium error, architecto pariatur, repudiandae odio aperiam? Velit, provident voluptas!</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <img src="/img/user-2.png">
+                    <h3>Join</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, aperiam. Asperiores veritatis ad quibusdam atque molestias quas consequatur cum corrupti, accusantium error, architecto pariatur, repudiandae odio aperiam? Velit, provident voluptas!</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <img src="/img/user-3.png">
+                    <h3>Lucy</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------------brand-------------------- -->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="/img/vinfast.png" alt="">
+            </div>
+            <div class="col-4">
+                <img src="/img/bmw.png" alt="">
+            </div>
+            <div class="col-4">
+                <img src="/img/honda.png" alt="">
+            </div>
+            <div class="col-4">
+                <img src="/img/ford.png" alt="">
+            </div>
+            <div class="col-4">
+                <img src="/img/chevroler.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------footer-------------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and Ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="/img/play-store.png" alt="">
+                    <img src="/img/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="/img/rc-car.png" alt="">
+                <p>Download App for Android and Ios mobile phone.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Writer</h3>
+                <ul>
+                    <li>Tran Minh Huy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------js toggle menu---------- -->
+
+<script>
+    var MenuIcon=document.getElementById("menu-icon");
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px"){
+            MenuItems.style.maxHeight="200px";
+            MenuIcon.style.border="solid #ff523b";
+        }else{
+            MenuItems.style.maxHeight="0px";
+            MenuIcon.style.border="solid #555";
+        }
+    }
+
+</script>
+
 </body>
 </html>
